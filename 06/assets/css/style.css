@@ -1,0 +1,236 @@
+/* Header */
+.Header {
+    width: 496px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    margin-left: 472px;
+}
+.home {
+    float: left;
+    margin: 25px 0px 25px 0px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    color: #070707;
+    text-decoration: none;
+}
+.another {
+    float: left;
+    margin: 25px 0 25px 40px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    color: #828282;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/* line */
+.line{
+    width: 970px;
+    height: 0px;
+    bottom: 0px;
+    color: #828282;
+    left: 235px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* first */
+.First {
+    padding: 0px;
+    max-width: 970px;
+    /* margin-left: auto;
+    margin-right: auto;  */
+    margin-left: 235px;
+    margin-right: 905px;
+}
+
+.main{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    color: #070707;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+
+
+
+
+
+
+
+/* about me  done!!!!!!!!!!*/
+.About_me {
+    background-color: #F6F6F6;
+    padding: 100px 0;
+    margin: 0 0 100px 0;
+    justify-content: center;
+    align-self: center;
+}
+.text {
+    width: 480px;
+    max: 50px 0 100px 0;
+}
+.about_text {
+    justify-content: center;
+    align-self: center;
+}
+.about {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #070707;
+    justify-content: center;
+}
+.about2 {
+    justify-content: center;
+    align-self: center;
+    margin: 30px 0;
+}
+.container {
+    max-width: 970px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* skills */
+
+.Skills {
+    background: #FFFFFF;
+    padding: 0px 22px;
+    max-width: 970px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.skills_text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #070707;
+    margin-top: 20px;
+}
+.icon{
+    
+}
+.color-name{
+    color: #828282;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    font-style: normal;
+}
+.stars{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    width: 170px;
+    height: 26px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+
+
+
+
+
+/* portfolio */
+.portfolio_text{
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    color: #070707;
+}
+
+
+.Portfolio {
+    background-color: #F6F6F6;
+    padding: 59px 235px;
+    max-width: 970px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+/* contacts */
+.Contacts {
+    padding: 0px 3px;
+    max-width: 970px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.contacts_text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+}
+
+
+
+.icons_bar {}
+
+
+
+.text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #828282;
+}
