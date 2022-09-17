@@ -5,7 +5,6 @@
     justify-content: center;
     align-items: center;
     padding: 0px 120px;
-
     max-width: 1440px;
     height: 80px;
 }
@@ -16,7 +15,6 @@
     align-items: center;
     padding: 0px;
     gap: 30px;
-
     max-width: 496px;
     height: 30px;
 }
@@ -24,16 +22,13 @@
 .navigation_item {
     max-width: 86px;
     height: 25px;
-    
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
     text-decoration: none;
-    
     letter-spacing: 0.02em;
-    
     color: #828282;
 }
 
@@ -48,7 +43,6 @@
     bottom: 0px;
     margin-left: auto;
     margin-top: auto;
-
     border: 1px solid #828282;
 }
 
@@ -68,15 +62,11 @@
 .name{
     width: 300px;
     height: 60px;
-    
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
     line-height: 65px;
-    
-    /* Black */
-    
     color: #070707;
 }
 
@@ -92,7 +82,6 @@
     padding: 100px 0;
     justify-content: center;
     align-self: center;
-
     max-width: 970px;
     margin-left: auto;
     margin-right: auto;
@@ -100,31 +89,27 @@
 }
 
 .about_me {
-    display: flex;
+     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 100px 0;
     gap: 50px;
-    
     max-width: 970px;
     height: 300px;
     margin-left: auto;
     margin-right: auto;
-    
     background: #F6F6F6;
-}
+} 
 
 .about_me .about_me_header {
     width: 200px;
     height: 40px;
-    
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 34px;
     line-height: 46px;
     text-align: center;
-    
     color: #070707;
 }
 
@@ -142,7 +127,6 @@
     text-align: center;
     color: #070707;
     justify-content: center;
-    
 }
 
 .about2 {
@@ -156,10 +140,8 @@
 .skills {
     max-width: 970px;
     height: 564px;
-
     margin-left: auto;
     margin-right: auto;
-    
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -256,10 +238,8 @@
 .portfolio {
     max-width: 970px;
     height: 2150px;
-
     margin-left: auto;
     margin-right: auto;
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -267,21 +247,18 @@
     padding: 59px 235px;
     gap: 50px;
     isolation: isolate;
-
     background: #F6F6F6;
 }
 
 .portfolio .portfolio_header {
     width: 150px;
     height: 40px;
-
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 34px;
     line-height: 46px;
     text-align: center;
-
     color: #070707;
 }
 
@@ -291,7 +268,6 @@
     align-items: center;
     padding: 0px;
     gap: 70px;
-
     max-width: 970px;
     height: 1978px;
 }
@@ -302,7 +278,6 @@
     align-items: center;
     padding: 0px;
     gap: 40px;
-
     max-width: 970px;
     height: 630px;
 }
@@ -315,7 +290,6 @@
 .portfolio_link {
     width: 200px;
     height: 50px;
-
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -323,7 +297,6 @@
     line-height: 25px;
     text-align: center;
     text-decoration-line: underline;
-
     color: #070707;
 }
 
@@ -352,7 +325,6 @@
     align-items: center;
     padding: 0px;
     gap: 20px;
-    
     width: 280px;
     height: 106px;
 }
@@ -360,28 +332,23 @@
 .contacts_header {
     width: 150px;
     height: 40px;
-    
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 34px;
     line-height: 46px;
-    
     color: #070707;
-    
 }
 
 .contacts_text {
     width: 235px;
     height: 46px;
-    
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
     text-align: center;
-    
     color: #070707;
 }
 
@@ -395,7 +362,6 @@
 
 .icons_bar {
     display: grid;
-    /* padding: 0px; */
     grid-template-columns: auto auto auto auto;
     gap: 50px;
     width: 310px;
@@ -412,7 +378,6 @@
     font-size: 14px;
     line-height: 19px;
     text-align: center;
-    
 }
 
 .text2{
