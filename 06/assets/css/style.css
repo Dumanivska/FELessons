@@ -1,13 +1,24 @@
 /* Header */
-.navigation_header {
-    width: 496px;
-    height: 30px;
+.header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-self: center;
-    margin-left: 472px;
-    margin-top: 25px;  
+    align-items: center;
+    padding: 0px 120px;
+
+    max-width: 1440px;
+    height: 80px;
+}
+
+.navigation_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+
+    max-width: 496px;
+    height: 30px;
 }
 
 .home {
@@ -23,6 +34,7 @@
 
 .another {
     float: left;
+    max-width: 86px;
     margin: 25px 0 25px 40px;
     font-weight: 400;
     font-size: 18px;
@@ -32,15 +44,31 @@
     text-decoration: none;
 }
 
+.navigation_item {
+    max-width: 86px;
+    height: 25px;
+    
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    
+    letter-spacing: 0.02em;
+    
+    color: #828282;
+}
+
 
 /* line */
 .line{
-    width: 970px;
+    max-width: 970px;
     height: 0px;
     bottom: 0px;
-    color: #828282;
-    margin-left: 235px;
-    margin-top: 25px;
+    margin-left: auto;
+    margin-top: auto;
+
+    border: 1px solid #828282;
 }
 
 
@@ -110,7 +138,7 @@
 
 /* SKILLS */
 .skills {
-    width: 970px;
+    max-width: 970px;
     height: 564px;
 
     margin-left: auto;
@@ -165,7 +193,7 @@
     align-items: center;
     padding: 0px;
     gap: 97px; 
-    width: 970px;
+    max-width: 970px;
     height: 230px;
 }
 
@@ -294,7 +322,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 0px 3px;
-    width: 970px;
+    max-width: 970px;
     height: 400px;
     margin-left: auto;
     margin-right: auto;
