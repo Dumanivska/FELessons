@@ -1,0 +1,153 @@
+.header {
+    width: 793px;
+    height: 82px;
+    background: #4A4F56;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.big_text {
+    width: 276px;
+    height: 28px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #FF8984;
+}
+
+.small_text {
+    width: 139px;
+    height: 19px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #FF8984;
+}
+
+/* BODY */
+.container {
+    width: 793px;
+    height: 300px;
+    background: #3B3F45;
+}
+
+.todo_list {
+    height: 270px;
+    width: 534px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* ROW  */
+.row {
+    display: flex;
+    align-items: center;
+    width: 534px;
+    height: 45px;
+    background: #88839E;
+}
+
+.row input {
+    width: 19px;
+    height: 19px;
+    background: #FFFFFF;
+    margin: 10px;
+}
+
+.row label {
+    width: 496px;
+    height: 21px;
+    display: flex;
+    align-items: center;
+}
+
+.row-big-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-left: 6px;
+    margin-right: 3px;
+}
+
+.row-small-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+
+/* HOVER */
+.row:hover {
+    background: #625E77;
+    border-top:  3px solid #fff;
+    border-bottom: 3px solid #fff;
+}
+
+input[type="checkbox"]:checked + label {
+    text-decoration: line-through  #9B96AC;
+
+}
+
+
+/* ROW1 */
+.row1 {
+    background: #88839E;
+}
+
+
+
+/* ROW 2 */
+.row2 {
+    background: #7A7593;
+}
+
+
+
+
+/* button */
+.button{
+    width: 534px;
+    height: 45px;
+    background: #4A4F56;  
+    margin-top: 45px;  
+}
+
+.button-text{
+    width: 107px;
+    height: 21px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #FF8984;
+    margin-right: 223px;
+    margin-left: 204px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+
+
