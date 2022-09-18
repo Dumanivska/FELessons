@@ -24,7 +24,6 @@
 .small_text {
     width: 139px;
     height: 19px;
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -34,8 +33,12 @@
     color: #FF8984;
 }
 
+.span{
+    font-family: 'Roboto';
+}
+
 /* BODY */
-.container {
+.container  {
     width: 793px;
     height: 300px;
     background: #3B3F45;
@@ -48,6 +51,7 @@
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
+    padding-top: 15px;
 }
 
 /* ROW  */
@@ -66,7 +70,7 @@
     margin: 10px;
 }
 
-.row label {
+input + label {
     width: 496px;
     height: 21px;
     display: flex;
@@ -107,17 +111,20 @@ input[type="checkbox"]:checked + label {
     text-decoration: line-through  #9B96AC;
 
 }
+input[type="checkbox"]:active + label > div {
+    font-style: italic;
+}
 
 
 /* ROW1 */
-.row1 {
+.row1:nth-child(2n+1) {
     background: #88839E;
 }
 
 
 
 /* ROW 2 */
-.row2 {
+.row2:nth-child(2n) {
     background: #7A7593;
 }
 
@@ -125,11 +132,22 @@ input[type="checkbox"]:checked + label {
 
 
 /* button */
+.button-bg{
+    width: 793px;
+    background: #3B3F45;
+    padding-top: 15px;
+    padding-bottom: 35px;
+}
 .button{
+    background: #4A4F56;  
+    display: flex;
+    align-items: center;
     width: 534px;
     height: 45px;
-    background: #4A4F56;  
-    margin-top: 45px;  
+    top: 417px;
+    margin-right: 130px;
+    margin-left: 129px;
+    text-align: center;
 }
 
 .button-text{
@@ -140,13 +158,11 @@ input[type="checkbox"]:checked + label {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    display: flex;
+    display: inline-block;
     align-items: center;
     color: #FF8984;
-    margin-right: 223px;
-    margin-left: 204px;
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin: 0 auto;
+    
 }
 
 
