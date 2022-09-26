@@ -3,133 +3,122 @@
   margin: 0;
   box-sizing: border-box;
 }
-header {
+
+.content {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-content: space-around;
-  justify-content: space-around;
+  max-width: 1440px;
   align-items: center;
-}
-.header-menu {
-  display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  padding: 0px;
-  gap: 30px;
 }
-.header-menu div:hover {
+
+.content--direction-row {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.content--direction-column {
+  flex-direction: column;
+}
+
+/* NAVIGATION BLOCK */
+.navigation {
+  display: flex;
+  margin: 28px 0;
+  gap: 30px;
+  justify-content: center;
+}
+
+.navigation__link {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  color: #3c3c3c;
+  text-decoration: none;
+}
+
+.navigation__link:hover {
   color: #18b5dc;
 }
 
-.btn:hover {
-  background-image: url(../images/button.jpg);
-  border: 1px solid #18b5dc;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.navigation__link--font-size-18 {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.navigation__link--font-size-20 {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/* BUTTON */
+.button {
   padding: 10px 20px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #3c3c3c;
+  background-color: #ffffff;
+}
+
+.button:hover {
+  color: #ffffff;
+  background-color: #18b5dc;
+  border-color: #18b5dc;
+}
+
+/* ICONS */
+.icon-group {
+  display: flex;
+}
+
+.icon-group--gap-4 {
+  gap: 4px;
+}
+
+.icon-group--gap-10 {
   gap: 10px;
 }
-.solid {
-  max-width: 1440px;
+
+.icon {
+  width: 42px;
+  height: 42px;
 }
 
-.who-we-are {
-  background: #f6f6f6;
+/* twitter */
+.icon--twitter {
+  background-image: url(../images/twitter.jpg);
 }
-.contetn {
-  max-width: 1170px;
-}
-.section-top {
-  display: flex;
-  flex-direction: column;
-  align-content: space-around;
-  justify-content: space-between;
-  align-items: center;
-}
-.who {
-  position: absolute;
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 34px;
-  line-height: 41px;
-  text-align: center;
-  letter-spacing: 0.13em;
-  text-transform: uppercase;
-  color: #3c3c3c;
-}
-.solid2 {
-  position: absolute;
-  max-width: 45px;
-  background: #dddbdb;
-}
-.subtitle {
-  position: absolute;
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  color: #3c3c3c;
-}
-
-.section-team {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  align-content: space-between;
-}
-.card {
-  width: 270px;
-  height: 270px;
-}
-.card:hover {
-  background-image: url(../images/bg.png);
-}
-
-.card-text {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-content: flex-start;
-  justify-content: flex-end;
-  align-items: flex-start;
-}
-.card-name {
-  color: #282528;
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 22px;
-}
-.card-work {
-  color: #646464;
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 22px;
-}
-footer {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-content: space-around;
-  justify-content: space-evenly;
-  align-items: center;
-}
-img:hover {
+.icon--twitter:hover {
   background-image: url(../images/twitterbg.jpg);
 }
-
-.footer-menu div:hover {
-  color: #18b5dc;
+/* facebook */
+.icon--facebook {
+  background-image: url(../images/facebook.jpg);
+}
+.icon--facebook:hover {
+  background-image: url(../images/facebookbg.jpg);
+}
+/* instagram */
+.icon--instagram {
+  background-image: url(../images/instagram.jpg);
+}
+.icon--instagram:hover {
+  background-image: url(../images/instagrambg.jpg);
+}
+/* linkedin */
+.icon--linkedin {
+  background-image: url(../images/linkedin.jpg);
+}
+.icon--linkedin:hover {
+  background-image: url(../images/linkedinbg.jpg);
+}
+/* telegram */
+.icon--telegram {
+  background-image: url(../images/telegram.jpg);
+}
+.icon--telegram:hover {
+  background-image: url(../images/telegrambg.jpg);
 }
