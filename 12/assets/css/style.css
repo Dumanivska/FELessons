@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.header {
+  margin-left: 120px;
+  margin-right: 120px;
+  max-width: 1200px;
+}
+.container {
+  max-height: 1200px;
+  justify-content: space-between;
+}
+
+.container__display {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: space-around;
+  align-items: center;
+  /* justify-content: flex-start; */
+}
+.justify-content {
+  justify-content: flex-start;
+  padding: 16px 0;
+}
+
+.text {
+  font-family: "Tourney", cursive;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.container__img {
+  width: 238px;
+  height: 54px;
+  justify-content: flex-end;
+}
+.nav {
+  color: #000000;
+  text-decoration: none;
+  font-family: "Staatliches", cursive;
+  /* height: 1.75em; */
+  font-size: 22px;
+  line-height: 28px;
+}
+.gap-50 {
+  gap: 50px;
+}
+/* MAIN */
+.main {
+  max-width: 1200px;
+  margin-left: 120px;
+  margin-right: 120px;
+  top: 150px;
+}
+.title {
+  display: flex;
+}
+.text-align {
+  text-align: center;
+}
+
+.title__h2 {
+  font-family: "Francois One", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.25em;
+  line-height: 1.3em;
+  /* font-size: 36px;
+  line-height: 48px; */
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.title__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.75em;
+  line-height: 2em;
+  color: #000000;
+}
+.title__chapter {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.25em; /* ==> font-size: 1.25 * some row height 10px ==> 12.5px */
+  line-height: 1.25em; /* ==> line-heigh: 1.25 * font-size 12.5px ==> 15pxpx*/
+
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+.chapter {
+  font-family: "Farro", sans-serif;
+  margin-left: 0.625em;
+}
+.background-color {
+  background-color: #dadada;
+}
+.block {
+  font-family: "PT Sans", sans-serif;
+}
+.block__bold {
+  font-weight: bold;
+}
+
+.text__underline {
+  text-decoration: underline;
+}
+.text__italic {
+  font-style: italic;
+}
+.margin-bottom-70 {
+  margin-bottom: 70px;
+}
+.margin-bottom-90 {
+  margin-bottom: 90px;
+}
+.margin-bottom-40 {
+  margin-bottom: 40px;
+}
+.gap-10 {
+  gap: 10px;
+}
