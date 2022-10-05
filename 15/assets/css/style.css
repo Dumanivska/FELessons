@@ -10,7 +10,7 @@
   /* width: 100px; */
   border-radius: 8px;
   max-width: 123px;
-  max-height: 182px;
+  max-height: 168px;
 }
 
 main {
@@ -18,6 +18,7 @@ main {
   flex-direction: column;
 }
 .flex-direction {
+  display: flex;
   flex-direction: row;
 }
 
@@ -28,8 +29,8 @@ main {
   perspective: 1000;
 }
 
-.flip-container:hover .flipper,
-.flip-container.hover .flipper {
+.flip-container:hover .flip,
+.flip-container.hover .flip {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
@@ -39,11 +40,11 @@ main {
 .flip-container,
 .front,
 .back {
-  width: 320px;
-  height: 427px;
+  width: 130px;
+  height: 200px;
 }
 
-.flipper {
+.flip {
   -webkit-transition: 0.6s;
   -webkit-transform-style: preserve-3d;
 
