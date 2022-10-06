@@ -1,0 +1,257 @@
+.cards-deck {
+  /* background-color: rgb(135, 126, 255); */
+  background-color: rgb(224, 167, 138);
+  padding: 20px;
+  max-width: 1920px;
+  margin: auto;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.cards {
+  margin: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.card {
+  font-size: 35px;
+  background-color: transparent;
+  min-width: 3.75em;
+  height: 5em;
+  perspective: 10em;
+}
+
+.card__container {
+  border: 0.05em #000000;
+  border-style: solid;
+  border-radius: 0.5em;
+  color: #000000;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card:hover .card__container {
+  transform: rotateY(180deg);
+}
+
+.card__front {
+  background-color: #ffffff;
+  color: #000000;
+  transform: rotateY(180deg);
+}
+
+.card__back {
+  background-image: url(../images/front.jpeg);
+  background-size: 100% 100%;
+}
+
+/* TEST */
+.card__container {
+  animation-name: card--flip;
+  animation-duration: 4s;
+}
+
+/* 2nd and 4th */
+.cards:nth-child(2n) .card:nth-child(2n) .card__container {
+  animation-delay: 2s;
+}
+
+.cards:nth-child(2n) .card:nth-child(3n) .card__container {
+  animation-delay: 4s;
+}
+
+.cards:nth-child(2n) .card:nth-child(5n) .card__container {
+  animation-delay: 6s;
+}
+
+.cards:nth-child(2n) .card:nth-child(6n) .card__container {
+  animation-delay: 8s;
+}
+
+/* 1 */
+.cards:nth-child(1) .card:nth-child(2n) .card__container {
+  animation-delay: 10s;
+}
+
+.cards:nth-child(1) .card:nth-child(3n) .card__container {
+  animation-delay: 12s;
+}
+
+.cards:nth-child(1) .card:nth-child(5n) .card__container {
+  animation-delay: 14s;
+}
+
+.cards:nth-child(1) .card:nth-child(6n) .card__container {
+  animation-delay: 16s;
+}
+
+/* 3 */
+.cards:nth-child(3) .card:nth-child(2n) .card__container {
+  animation-delay: 18s;
+}
+
+.cards:nth-child(3) .card:nth-child(3n) .card__container {
+  animation-delay: 20s;
+}
+
+.cards:nth-child(3) .card:nth-child(5n) .card__container {
+  animation-delay: 22s;
+}
+
+.cards:nth-child(3) .card:nth-child(6n) .card__container {
+  animation-delay: 24s;
+}
+
+@keyframes card--flip {
+  50% {
+    transform: rotateY(180deg);
+  }
+}
+
+.card__front,
+.card__back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 0.5em;
+}
+
+/*  CARD symbol grid positions */
+/* --------------------------- */
+/*   pos-a1   pos-b1   pos-c1  */
+/*   pos-a2   pos-b2   pos-c2  */
+/*   pos-a3   pos-b3   pos-c3  */
+/*   pos-a4   pos-b4   pos-c4  */
+/*   pos-a5   pos-b5   pos-c5  */
+/* --------------------------- */
+
+/* INDEX  */
+.index {
+  font-size: 50%;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  left: 0.25em;
+  top: 0.25em;
+}
+
+.index--reverted {
+  font-size: 50%;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  right: 0.25em;
+  bottom: 0.25em;
+  transform: rotate(180deg);
+}
+
+/* LEFT COLUMN */
+.card__symbol--grid-a1 {
+  position: absolute;
+  left: 0.6em;
+  top: 0.5em;
+}
+.card__symbol--grid-a2 {
+  position: absolute;
+  left: 0.6em;
+  top: 1.5em;
+}
+.card__symbol--grid-a3 {
+  position: absolute;
+  left: 0.6em;
+  top: 2em;
+}
+.card__symbol--grid-a4 {
+  position: absolute;
+  left: 0.6em;
+  top: 2.5em;
+  transform: rotate(180deg);
+}
+.card__symbol--grid-a5 {
+  position: absolute;
+  left: 0.6em;
+  top: 3.5em;
+  transform: rotate(180deg);
+}
+
+/* MIDDLE COLUMN  */
+.card__symbol--grid-b1 {
+  position: absolute;
+  left: 1.5em;
+  top: 0.5em;
+}
+.card__symbol--grid-b2 {
+  position: absolute;
+  left: 1.5em;
+  top: 1em;
+}
+.card__symbol--grid-b3 {
+  position: absolute;
+  left: 1.5em;
+  top: 2em;
+}
+.card__symbol--grid-b4 {
+  position: absolute;
+  left: 1.5em;
+  top: 3em;
+  transform: rotate(180deg);
+}
+.card__symbol--grid-b5 {
+  position: absolute;
+  left: 1.5em;
+  top: 3.5em;
+  transform: rotate(180deg);
+}
+
+/* RIGHT COLUMN */
+.card__symbol--grid-c1 {
+  position: absolute;
+  right: 0.6em;
+  top: 0.5em;
+}
+.card__symbol--grid-c2 {
+  position: absolute;
+  right: 0.6em;
+  top: 1.5em;
+}
+.card__symbol--grid-c3 {
+  position: absolute;
+  right: 0.6em;
+  top: 2em;
+}
+.card__symbol--grid-c4 {
+  position: absolute;
+  right: 0.6em;
+  top: 2.5em;
+  transform: rotate(180deg);
+}
+.card__symbol--grid-c5 {
+  position: absolute;
+  right: 0.6em;
+  top: 3.5em;
+  transform: rotate(180deg);
+}
+
+.card__symbol--center {
+  font-size: 200%;
+  position: absolute;
+  left: 0.6em;
+  top: 0.6em;
+}
+
+.red {
+  color: red;
+}
