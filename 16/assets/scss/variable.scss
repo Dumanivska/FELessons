@@ -84,13 +84,18 @@ body {
     @include alignment-flex-space-between;
     min-height: 560px;
 
+    &__container {    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
     &__photo {
         position: relative;
         margin: 0 auto;
         padding: 15px;
         max-width: 430px;
         max-height: 430px;
-
         &_border-top--l {
             @include border-image;
             top: 0;
@@ -128,13 +133,11 @@ body {
         background-color: $gold;
         width: 1px;
         height: 560px;
-        
     }
 
     &__info {
         max-width: 430px;
         @include alignment-flex-center;
-        margin: 0 auto;
 
         &_title {
              margin-bottom: 30px;

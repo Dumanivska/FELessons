@@ -61,6 +61,11 @@ body {
   justify-content: space-between;
   min-height: 560px;
 }
+.profile__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 .profile__photo {
   position: relative;
   margin: 0 auto;
@@ -115,7 +120,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
 }
 .profile__info_title {
   margin-bottom: 30px;
