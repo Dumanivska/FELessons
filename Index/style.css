@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+.main {
+  padding: 50px;
+  background-image: url(bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  max-width: 300px;
+  margin: 0px auto;
+}
+ul {
+  border-radius: 5px;
+  background-color: rgba(79, 88, 87, 0.5);
+}
+li {
+  list-style-type: none;
+  padding: 3px;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+}
+li:hover a {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  padding: 0;
+  border: none;
+}
+li:active a {
+  color: #000;
+}
+a {
+  display: block;
+  width: 100%;
+  font-family: "Sacramento", cursive;
+  font-size: 40px;
+  line-height: 30px;
+  color: #ccc;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
