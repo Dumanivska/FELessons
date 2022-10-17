@@ -4,19 +4,16 @@
 
 /* General styles */
 @import 'variables';
-@import 'general';
 @import 'mixins';
+@import 'general';
 
 /* Site styles */
 @import 'header';
-@import 'first-screen';
+@import 'first';
 @import 'arrow';
 @import 'blog';
-@import 'blog-post';
-@import 'latest-posts';
-@import 'latest-posts-article';
+@import 'latest_posts';
 @import 'popular';
-@import 'popular-post';
 @import 'info';
 @import 'footer';
 @import 'link-bar';
