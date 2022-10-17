@@ -15,7 +15,8 @@
   background-color: #f5f3f9;
   position: relative;
   transition: all 1s ease;
-  transform: scale(1);
+  width: 335px;
+  height: 793px;
 }
 .main__cards .cards__box .box__heading {
   padding: 0 70px 0 70px;
@@ -27,28 +28,29 @@
   margin-bottom: 30px;
 }
 .main__cards .cards__box .box__heading .heading__price {
-  position: relative;
-  font-family: "Bebas Neue", cursive;
-  font-size: 60px;
-  line-height: 60px;
-  letter-spacing: 0.08em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Bebas Neue", cursive;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 0.08em;
+    padding: 0px;
 }
 .main__cards .cards__box .box__heading .heading__price::before {
-  content: "$";
-  font-size: 24px;
-  line-height: 28px;
-  position: absolute;
-  top: 2px;
-  left: -9px;
+    content: "$";
+    font-size: 24px;
+    line-height: 28px;
+    width: 10px;
 }
 .main__cards .cards__box .box__heading .heading__price::after {
-  content: "/HR";
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 16px;
-  position: absolute;
-  bottom: 9px;
-  right: -28px;
+    content: "/HR";
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+    width: 10px;
+    padding: 33px 0px 0px 0px;
 }
 .main__cards .cards__box .box__heading .heading__title {
   font-family: "Bebas Neue", cursive;
@@ -57,14 +59,15 @@
   letter-spacing: 0.04em;
 }
 .main__cards .cards__box .box__services {
-  padding: 40px 110px 60px 110px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-image: url(../img/bg-image.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
+    padding: 40px 110px 60px 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/bg-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    transition: padding-bottom 1s ease;
 }
 .main__cards .cards__box .box__services .services__list {
   list-style: none;
@@ -73,6 +76,7 @@
   align-items: flex-start;
   gap: 30px;
   margin-top: 40px;
+  height: 320px;
 }
 .main__cards .cards__box .box__services .services__list .list__item {
   font-family: "Roboto", sans-serif;
@@ -87,7 +91,7 @@
   display: flex;
   justify-content: center;
   position: relative;
-  transition: all 2s ease;
+  /*transition: all 1s ease;*/
 }
 
 .btn__item {
@@ -102,9 +106,9 @@
   line-height: 18px;
   letter-spacing: 0.04em;
   color: #ffffff;
-  transition: all 1s ease;
+  transition: all 1s;
   position: absolute;
-  bottom: -27px;
+  top: -27px;
 }
 .btn__text {
   display: none;
@@ -119,7 +123,8 @@
 }
 
 .cards__box:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
+    z-index: 5;
 }
 .cards__box:hover .box__btn {
   padding-top: 35px;
@@ -132,28 +137,34 @@
 }
 .cards__box:hover .btn__item {
   background-color: #fd8d7b;
-  position: absolute;
-  bottom: 60px;
+}
+.cards__box:hover .buble__label {
+    z-index: 10;
+    position: absolute;
+}
+.cards__box:hover .box__services {
+    padding-bottom: 30px;
+    transition: padding-bottom 1s ease;
 }
 
 .box__buble {
-  display: none;
-  position: absolute;
-  right: 30px;
-  top: 16px;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background-color: #fd8d7b;
+    display: none;
+    position: absolute;
+    right: 30px;
+    top: 16px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #fd8d7b;
 }
 .box__buble:hover .buble__label {
   display: block;
 }
 .box__buble::after {
-  content: url("../img/bubble.png");
-  position: absolute;
-  top: -10px;
-  right: -21px;
+    content: url("../images/bubble.png");
+    position: absolute;
+    top: -10px;
+    right: -21px;
 }
 .box__buble .buble__text {
   padding: 15px 19px;
@@ -163,20 +174,22 @@
   color: #ffffff;
 }
 .box__buble .buble__label {
-  position: absolute;
-  background-image: url(../img/tooltip\ bg.png);
-  background-repeat: no-repeat;
-  top: 10px;
-  left: 56px;
-  display: none;
+    position: absolute;
+    background-image: url(../images/tooltip\ bg.png);
+    background-repeat: no-repeat;
+    top: 10px;
+    left: 56px;
+    display: none;
+    z-index: 10;
+    position: absolute;
 }
 .box__buble .buble__label .label__text {
-  font-family: "Bebas Neue", cursive;
-  padding: 8px 24px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
-  color: #ffffff;
+    font-family: "Bebas Neue", cursive;
+    padding: 8px 24px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #ffffff;
 } /*# sourceMappingURL=style.css.map */
