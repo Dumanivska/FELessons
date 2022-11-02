@@ -1,0 +1,24 @@
+body {
+  background-color: #e4ffd8;
+}
+a {
+  text-decoration: none;
+}
+.button_Style_header {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+.button_Text_style {
+  -webkit-writing-mode: horizontal-tb !important;
+  -webkit-appearance: button;
+  border-color: rgb(221, 206, 196) rgb(210, 187, 187) rgb(191, 165, 165);
+  border-style: solid;
+  border-width: 3px;
+  padding: 1px 7px 2px;
+  text-rendering: auto;
+  color: initial;
+  display: inline-block;
+  text-align: start;
+  font: 400 21px system-ui;
+}
