@@ -87,4 +87,3 @@ let filter = list.filter(function perfectNum(num){
     });
     console.log(filter)
 }
-
