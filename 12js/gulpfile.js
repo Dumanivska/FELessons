@@ -87,30 +87,3 @@ exports.default = gulp.series(
     gulp.parallel(njk, scss),
     gulp.parallel(browsersync, watch)
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function testTask(done){
-//     console.log('my test message');
-//     done();
-// }
-// function testTaskSecond(done){
-//     console.log('my test message 222')
-//     done();
-// }
-// exports.test = testTask;
-// exports.testSecond = testTaskSecond;
